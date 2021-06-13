@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="15.285">
+<testcase classname="Test scenarios to verify PetStore Application REST Api services." name="Add a new pet and verify the pet is added successfully." time="10.673">
+<system-out><![CDATA[Given Using POST operation to add a pet with body...........................passed
+Then Using GET operation with pet ID to verify the details are added correctly.passed
+]]></system-out>
+</testcase>
+<testcase classname="Test scenarios to verify PetStore Application REST Api services." name="Add a new pet and verify the user is able to delete it successfully." time="2.019">
+<system-out><![CDATA[Given Using POST operation to add a pet with body...........................passed
+And Using DELETE operation with ID and verify the data is removed...........passed
+Then To verify the pet ID and to check data is removed......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test scenarios to verify PetStore Application REST Api services." name="Update the existing pet with image and verify details updated successfully." time="1.406">
+<system-out><![CDATA[Given Using POST operation to add a pet with body...........................passed
+Then Using GET operation with pet ID to verify the details are added correctly.passed
+]]></system-out>
+</testcase>
+<testcase classname="Test scenarios to verify PetStore Application REST Api services." name="Using GET operation to check status of pet." time="0.749">
+<system-out><![CDATA[Given Using GET operation to check status of pet............................passed
+]]></system-out>
+</testcase>
+</testsuite>

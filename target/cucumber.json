@@ -1,0 +1,434 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-13T11:37:51.012Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.deletemethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.getmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.postmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Add a new pet and verify the pet is added successfully.",
+        "description": "",
+        "id": "test-scenarios-to-verify-petstore-application-rest-api-services.;add-a-new-pet-and-verify-the-pet-is-added-successfully.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Pet with ID:563 created."
+            ],
+            "result": {
+              "duration": 9515384500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Using POST operation to add a pet with body",
+            "match": {
+              "location": "StepDefinitions.postmethod.postoperationtoaddnewpet(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "Name",
+                  "Status",
+                  "Photo_Url",
+                  "Tags_Id",
+                  "Tags_Name",
+                  "Category_Id",
+                  "Category_Name"
+                ]
+              },
+              {
+                "cells": [
+                  "563",
+                  "raki",
+                  "Sold",
+                  "https://image9",
+                  "22",
+                  "ilovepets",
+                  "1",
+                  "cat"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Verified id:563 is updated with values, name:raki ,status:Sold"
+            ],
+            "result": {
+              "duration": 1153190000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Using GET operation with pet ID to verify the details are added correctly",
+            "match": {
+              "location": "StepDefinitions.getmethod.getoperationtoverifydetails(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "Name",
+                  "Status"
+                ]
+              },
+              {
+                "cells": [
+                  "563",
+                  "raki",
+                  "Sold"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T11:38:01.712Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.deletemethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.getmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.postmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Add a new pet and verify the user is able to delete it successfully.",
+        "description": "",
+        "id": "test-scenarios-to-verify-petstore-application-rest-api-services.;add-a-new-pet-and-verify-the-user-is-able-to-delete-it-successfully.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Pet with ID:568 created."
+            ],
+            "result": {
+              "duration": 702762500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Using POST operation to add a pet with body",
+            "match": {
+              "location": "StepDefinitions.postmethod.postoperationtoaddnewpet(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "Name",
+                  "Status",
+                  "Photo_Url",
+                  "Tags_Id",
+                  "Tags_Name",
+                  "Category_Id",
+                  "Category_Name"
+                ]
+              },
+              {
+                "cells": [
+                  "568",
+                  "brown",
+                  "pendig",
+                  "https://image25",
+                  "91",
+                  "smiley",
+                  "1",
+                  "Dog"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Pet with ID:568 deleted Successfully"
+            ],
+            "result": {
+              "duration": 659296700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Using DELETE operation with ID and verify the data is removed.",
+            "match": {
+              "location": "StepDefinitions.deletemethod.deleteoperationwithid(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id"
+                ]
+              },
+              {
+                "cells": [
+                  "568"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Pet with ID:568 is not present."
+            ],
+            "result": {
+              "duration": 657805100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "To verify the pet ID and to check data is removed.",
+            "match": {
+              "location": "StepDefinitions.getmethod.idtocheckdataisremoved(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "Name",
+                  "Status"
+                ]
+              },
+              {
+                "cells": [
+                  "568",
+                  "brown",
+                  "pending"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T11:38:03.741Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.deletemethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.getmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.postmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Update the existing pet with image and verify details updated successfully.",
+        "description": "",
+        "id": "test-scenarios-to-verify-petstore-application-rest-api-services.;update-the-existing-pet-with-image-and-verify-details-updated-successfully.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Pet with ID:567 created."
+            ],
+            "result": {
+              "duration": 692312700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Using POST operation to add a pet with body",
+            "match": {
+              "location": "StepDefinitions.postmethod.postoperationtoaddnewpet(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "Name",
+                  "Status",
+                  "Photo_Url",
+                  "Tags_Id",
+                  "Tags_Name",
+                  "Category_Id",
+                  "Category_Name"
+                ]
+              },
+              {
+                "cells": [
+                  "567",
+                  "rakii",
+                  "Sold",
+                  "https://image12",
+                  "20",
+                  "ilovepets",
+                  "1",
+                  "cat"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Verified id:567 is updated with values, name:rakii ,status:Sold"
+            ],
+            "result": {
+              "duration": 713795800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Using GET operation with pet ID to verify the details are added correctly",
+            "match": {
+              "location": "StepDefinitions.getmethod.getoperationtoverifydetails(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Id",
+                  "Name",
+                  "Status",
+                  "Photo_Url"
+                ]
+              },
+              {
+                "cells": [
+                  "567",
+                  "rakii",
+                  "Sold",
+                  "https://image12"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-13T11:38:05.149Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.deletemethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.getmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.postmethod.before(Scenario) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Using GET operation to check status of pet.",
+        "description": "",
+        "id": "test-scenarios-to-verify-petstore-application-rest-api-services.;using-get-operation-to-check-status-of-pet.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Verified Response of status:pending"
+            ],
+            "result": {
+              "duration": 749847700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Using GET operation to check status of pet.",
+            "match": {
+              "location": "StepDefinitions.getmethod.getoperationtocheckstatus(DataTable) in file:/C:/Users/Tharakesh/eclipse-workspace2019/Petmodule/target/test-classes/"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "status"
+                ]
+              },
+              {
+                "cells": [
+                  "pending"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Test scenarios to verify PetStore Application REST Api services.",
+    "description": "",
+    "id": "test-scenarios-to-verify-petstore-application-rest-api-services.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/petmodule.feature",
+    "tags": []
+  }
+]

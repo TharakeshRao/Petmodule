@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-13T13:37:48 CEST" name="Petmodule.Petmodule.AppTest" finished-at="2021-06-13T13:38:06 CEST" duration-ms="17860">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-06-13T13:37:48 CEST" name="Command line test" finished-at="2021-06-13T13:38:06 CEST" duration-ms="17860">
+      <class name="Petmodule.Petmodule.AppTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" started-at="2021-06-13T13:37:48 CEST" name="setUpClass" finished-at="2021-06-13T13:37:50 CEST" duration-ms="1456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" started-at="2021-06-13T13:37:50 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-13T13:38:01 CEST" duration-ms="11026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a new pet and verify the pet is added successfully."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test scenarios to verify PetStore Application REST Api services."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" started-at="2021-06-13T13:38:01 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-13T13:38:03 CEST" duration-ms="2023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a new pet and verify the user is able to delete it successfully."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test scenarios to verify PetStore Application REST Api services."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" started-at="2021-06-13T13:38:03 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-13T13:38:05 CEST" duration-ms="1413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update the existing pet with image and verify details updated successfully."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test scenarios to verify PetStore Application REST Api services."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" started-at="2021-06-13T13:38:05 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-13T13:38:05 CEST" duration-ms="751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Using GET operation to check status of pet."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test scenarios to verify PetStore Application REST Api services."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Petmodule.Petmodule.AppTest@4034c28c]" started-at="2021-06-13T13:38:05 CEST" name="tearDownClass" finished-at="2021-06-13T13:38:06 CEST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Petmodule.Petmodule.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Petmodule.Petmodule.AppTest -->
+</testng-results>

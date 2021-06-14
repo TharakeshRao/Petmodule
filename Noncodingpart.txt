@@ -1,0 +1,9 @@
+For displaying the reports as part of the CI process. we can integrate the cucumber into the Jenkins pipeline
+
+1)In the first step, we create a Jenkins file in the project and define the stages and step of the pipeline.
+
+2)After checking the code into GitHub.
+
+3)In a further step in Jenkins, we add the cucumber reports plugin.
+The data integration from the Jenkins file to the cucumber reports is carried out.
+While running the Jenkins pipeline, the test reports are displayed and help determine what type of failures and scenarios are executed.
